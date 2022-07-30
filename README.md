@@ -1,5 +1,15 @@
 # Stellaris-Map-Editor
 
+It can now edit Star Position through input
+It's already 4AM in my country and I'm still doing this thing while I still have freaking projects for the summer, I need help in addiction.
+
+-Added ability to edit stars
+-Added a better UI
+-Optimized code, by optimized, I compressed lines into a "for in (array)" hell.
+
+I have basically finished all things I need to do for coding except for translating the Lua I coded  into this language. They complete the puzzle but they don't fit yet.
+
+##Old README##
 PROJECT ON HIATUS, I HAVE SUMMER CLASS AND I SPENT A WHOLE WEEK PROCRASTINATING BY CODING THIS THING WHOLE WEEK
 Possible problem: hyperlanes have bridge=yes variable now so I have to make a code that will cycle through it so I can remove it 
 
