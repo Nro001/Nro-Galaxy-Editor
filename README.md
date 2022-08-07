@@ -10,7 +10,7 @@ Features
 - [x] **Generate visual map for:**
 - - [x] Stars: different visuals for unmodded `star_class`
 - - [x] Hyperlanes: bridge and `no bridges o_O?`
-- - [ ] Wormholes: another headache as it's not part of portion
+- - [ ] Wormholes: another headache as it's not part of galactic_object
 - [x] **Map Editor for:**
 - - [x] Hyperlane: Connect/Disconnect
 - - [x] Star: Drag-Drop, Arrow
@@ -28,7 +28,8 @@ For that, you have to get the `gamestate` file on your save, you can go to the w
 Third-party software
 ========================
 This project uses the following software:
-* [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript) : Lua is necessary for my pattern-matching string functions.
+* [Godot Engine](https://github.com/godotengine/godot)
+* [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript)
 
 Changelog
 ========================
