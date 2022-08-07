@@ -1,2 +1,1 @@
-*.GDScript linguist-detectable=true
-*.lua linguist-detectable=true
+*.exe linguist-language=GDScript
