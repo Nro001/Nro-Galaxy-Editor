@@ -1,6 +1,44 @@
-# Stellaris-Map-Editor
+# Stellaris-Map-Editor (Work-In-Progress)
 
+I just did this for fun, by "fun", taking a whole month and a whole day of just creating, coding and tweaking.
+I will be taking a break and I don't know how If I can work at this at all, I'm just doing this as a hobby ~~addiction~~ really and University semester is nigh so I need to get serious with my life.
 
+Features
+========================
+- [x] Reads the `galactic_object` of the save-file
+- [x] **Generate visual map for:**
+- - [x] Stars: different visuals for unmodded `star_class`
+- - [x] Hyperlanes: bridge and `no bridges o_O?`
+- - [ ] Wormholes: another headache as it's not part of portion
+- [x] **Map Editor for:**
+- - [x] Hyperlane: Connect/Disconnect
+- - [x] Star: Drag-Drop, Arrow
+- - [ ] Wormholes
+- [ ] Save changes from the map editor `NEXT GOAL`
+- [x] **Miscellaneous**
+- - [x] Toggle visibility for Stars, Names, Hyperlane
+- - [x] Logs information to the DEBUG
+
+Third-party software
+========================
+This project uses the following software:
+* [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript) : for pattern-matching string functions.
+
+0.9.2: Drag-drop savefile, read, parse, generate visual.
+
+>Parses the contents of the star section of the save game using Lua since their string functions are crucial for pattern-matching.
+
+>It can get most from elements to sub-elements either if it's used right now or not but I'm still confused why it can't get some things sometimes,  added contingencies as solution for necessary variables especially the [bridge] variable in the [hyperlane].
+
+>Can drag and drop [gamestate] file to the executable to start the visual generation, so far it's the only way to initiate it.
+
+>Added temporary icon
+
+>No way to save the changes automatically yet, that's another headache I can't afford right now. Use this as a guide what to edit on your savefile for now.
+>It's a mess of a code but no errors so far.
+
+Merged too many
+![Screenshot_4](https://user-images.githubusercontent.com/107048186/183307433-4008290b-4071-4eee-98f9-dba6cb04abb9.png)
 
 0.9V: Optimized, will resume after I complete my summer classes
 For a month now, I have coded all the basic features needed to edit star position and the hyperlanes from scratch. The only thing I'm lacking of is translating the Lua code I made for decoding and encoding, which might be another headache. Therefore, I will take a break from this after I complete my summer classes cause this is turning into my addiction.
