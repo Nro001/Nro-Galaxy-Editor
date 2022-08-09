@@ -1,29 +1,83 @@
 ![icon](https://user-images.githubusercontent.com/107048186/183308766-ef93d871-3cb2-441c-b978-fff1da15a5dc.png)
-# Stellaris-Map-Editor (Work-In-Progress)
+# Stellaris-Galaxy-Editor
+As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
 
-I just did this for fun, by "fun", taking a whole month and a whole day of just creating, coding and tweaking.
-So, I will be taking a break and I don't know how If I can work at this at all, I'm just doing this as a hobby ~~addiction~~ really and my uni is nigh again so I need to focus with my studies.
+This is just a small project that generates visual map to edit the position of stars and connects/disconnects hyperlanes.
+
+Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating, coding and tweaking.
 
 Features
 ========================
-- [x] Reads the `galactic_object` of the save-file
+- [x] Parses the _galactic_object_ of the save-file. Basically, stars and hyperlanes.
 - [x] **Generate visual map for:**
-- - [x] Stars: different visuals for unmodded `star_class`
+- - [x] Stars: different visuals for _star_class_ and some modded ones
 - - [x] Hyperlanes: bridge and `no bridges o_O?`
-- - [ ] Wormholes: another headache as it's not part of galactic_object
+- - [ ] Wormholes: `Low-priority` There is an external section needed other than _galactic_object_
 - [x] **Map Editor for:**
 - - [x] Hyperlane: Connect/Disconnect
-- - [x] Star: Drag-Drop, Arrow
-- - [ ] Wormholes
-- [ ] Save changes from the map editor `NEXT GOAL`
+- - [x] Star: Input, Drag-Drop, Arrow
+- - [ ] Wormholes: `Low-priority`
+- - [ ] Delete Star `Mid-priority` Just use the Star-Eater for now, I guess?
+- [x] Save feature `DONE` `Unoptimized`
 - [x] **Miscellaneous**
 - - [x] Toggle visibility for Stars, Names, Hyperlane
 - - [x] Logs information to the DEBUG
+- - [x] Flips the x-plane to imitate the map. *toggleable*
+- - [x] Resume previous session, uses the original save-file. *toggleable*
+
+Support
+========================
+**_I have seven cats, seven hells, help me buy cat food._**
+
+Unfortunately, I can't make a PayPal account right now cause the validation ID seems to take a year to be processed and delivered t-t
 
 Usage
 ========================
-As of now the only function is to read and generate visual map, you have to manually edit the variables to your savefile.
-For that, you have to get the `gamestate` file on your save, you can go to the wiki for further instuctions: [Save-game editing](https://stellaris.paradoxwikis.com/Save-game_editing). Drag and drop the file anywhere the application to start.
+The save-file doesn't need to be a fresh start, it can be used any point in time of the game. The size of the save-file only affects how long it will take to process.
+
+Initial
+------------------------
+Simply, run the application and drag and drop the `gamestate` file inside your save to the screen. If the application freezes, Lua is probably running the scripts. **DON'T FORGET TO CHECK THE DEBUG FOR THE STATUS**
+* If you don't know how to get the file, you can go to the wiki for further instuctions: [Save-game editing](https://stellaris.paradoxwikis.com/Save-game_editing).
+* Use [Notepad++](https://notepad-plus-plus.org/downloads/) if you want to open `gamestate` and save changes
+* App Directory: `%APPDATA%/Stellaris-Galaxy-Editor/`
+  * *If anyone has idea where they are in other OS please let me know*
+
+Camera Controls
+------------------------
+* Movement: Keyboard arrows or `W` `A` `S` `D`
+* Zoom: Hold `Q` to zoom-out and `E` to zoom-in
+* Reset: Press `R` to reset position and zoom
+* Name: Hold `Alt` to temporarily show or hide star names 
+
+Buttons
+------------------------
+There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon to see their descriptions
+
+* **Star Editor**: there are three ways to change their position and they are toggled by default
+  * `Input`: Click the x or y input bar to change then press Enter. 
+  * `Arrow`: Click the white cardinal arrows.
+  * `Drag`: Click the star first then drag them anywhere. Negative values makes the drag smoother. Range: 2 to (-3)
+* **Hyperlane Editor**: click a star and another star to either connect or disconnect, automatically decides based on wether there is already connection. Click on the star itself if you want to cancel.
+* **Miscellaneous**
+  * `Flip`: map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
+  * `Resume`: resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag another gamestate to the screen 
+
+Saving
+------------------------
+To save the changes you have made: Simply click `Map`->`Save`. It will freeze the game as the Lua is running the scripts. This will take a bit of time, the more the save-file is larger. Check the DEBUG for status.
+* The results of the changes are located: `.../save-file/packed/`
+* There are two files you can choose that are created after you export:
+  * `galactic-object-modified`: A more safer method. Using Notepad++ copy everything inside this file then open your original gamestate (make a copy) and search for `galactic_object={` then highlight the `{` only and press `Ctrl+Alt+B` then paste `Ctrl+V` then save. Make sure "galactic_object={" is not duplicated.
+  * `gamestate`: A less safer method. There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause something but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
+* After that, open .sav file (make a copy) and paste the modified gamestate.
+
+Changing to another save-file
+------------------------
+If you want to change to another save-file, simply drag your new `gamestate` to the screen
+* If there is an error or bug, exit the application and open it again.
+* If the application is set to resume the previous session, either delete `.../save-file/parsed` or go to the app directory `.../save-file/settings` and change it to `ResPrev=false`
+
 
 Third-party software
 ========================
@@ -31,8 +85,23 @@ This project uses the following software:
 * [Godot Engine](https://github.com/godotengine/godot)
 * [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript)
 
+
 Changelog
 ========================
+**1.0.0 beta: It can now save!**
+------------------------
+Now I take a break.
+
+* Added save feature
+* Map is now inverted at x-plane by default as to imitate the galaxy map. *toggleable*
+* Added a resume previous session feature, off by default
+* Updated README.md
+
+The coding is a bit of a mess, Function>>Optimize, but it works as intended.
+
+_Fear the Blorg Aeternum!_
+
+<img src="https://user-images.githubusercontent.com/107048186/183735974-93249845-a2a7-458e-95a5-b47e26544c30.png" width="631" height="384">
 
 **0.9.2: Drag-drop savefile, read, parse, generate visual.**
 ------------------------
