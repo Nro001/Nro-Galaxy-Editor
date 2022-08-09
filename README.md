@@ -88,7 +88,7 @@ This project uses the following software:
 
 Changelog
 ========================
-**1.0.0 beta: It can now save!**
+**1.0.0 beta: It can now save!** Repository now public.
 ------------------------
 Now I take a break.
 
@@ -102,6 +102,7 @@ The coding is a bit of a mess, Function>>Optimize, but it works as intended.
 _Fear the Blorg Aeternum!_
 
 <img src="https://user-images.githubusercontent.com/107048186/183735974-93249845-a2a7-458e-95a5-b47e26544c30.png" width="631" height="384">
+
 
 **0.9.2: Drag-drop savefile, read, parse, generate visual.**
 ------------------------
