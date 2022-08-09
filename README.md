@@ -57,7 +57,7 @@ There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon t
 * **Star Editor**: there are three ways to change their position and they are toggled by default
   * `Input`: Click the x or y input bar to change then press Enter. 
   * `Arrow`: Click the white cardinal arrows.
-  * `Drag`: Click the star first then drag them anywhere. Negative values makes the drag smoother. Range: 2 to (-3)
+  * `Drag`: Click the star first then drag them anywhere. Negative values makes the drag smoother.     Range: 2 to (-3)
 * **Hyperlane Editor**: click a star and another star to either connect or disconnect, automatically decides based on wether there is already connection. Click on the star itself if you want to cancel.
 * **Miscellaneous**
   * `Flip`: map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
@@ -68,7 +68,7 @@ Saving
 To save the changes you have made: Simply click `Map`->`Save`. It will freeze the game as the Lua is running the scripts. This will take a bit of time, the more the save-file is larger. Check the DEBUG for status.
 * The results of the changes are located: `.../save-file/packed/`
 * There are two files you can choose that are created after you export:
-  * `galactic-object-modified`: A more safer method. Using Notepad++ copy everything inside this file then open your original gamestate (make a copy) and search for `galactic_object={` then highlight the `{` only and press `Ctrl+Alt+B` then paste `Ctrl+V` then save. Make sure "galactic_object={" is not duplicated.
+  * `galactic-object-modified`: A more safer method. Using Notepad++ highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy `Ctrl+C` then open your original gamestate (make a copy) and search for `galactic_object={` then highlight the `{` only and press `Ctrl+Alt+B` then paste `Ctrl+V` then save. Make sure "galactic_object={" is not duplicated.
   * `gamestate`: A less safer method. There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause something but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
 * After that, open .sav file (make a copy) and paste the modified gamestate.
 
