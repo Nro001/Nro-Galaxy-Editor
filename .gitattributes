@@ -1,1 +1,2 @@
 *.exe linguist-language=GDScript
+*.dll linguist-language=Lua
