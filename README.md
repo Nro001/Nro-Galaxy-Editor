@@ -92,10 +92,12 @@ The data's template can be translated as:
 
 Open the application again, assuming resume is set to true, and then save, voilà!
 
-Third-party software
+Software
 ========================
-This project uses the following software:
-* [Godot Engine](https://github.com/godotengine/godot)
+This project uses [Godot Engine](https://github.com/godotengine/godot) to create this standalone application.
+
+Third-party software:
+------------------------
 * [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript)
 
 
