@@ -1,5 +1,5 @@
 ![icon](https://user-images.githubusercontent.com/107048186/183308766-ef93d871-3cb2-441c-b978-fff1da15a5dc.png)
-# Stellaris-Galaxy-Editor
+# Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
 
 This is just a small project that generates visual map to edit the position of stars and connects/disconnects hyperlanes. This is also my first project that I actually finished so if there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
