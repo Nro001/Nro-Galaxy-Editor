@@ -99,7 +99,7 @@ This project uses the following software:
 
 Changelog
 ========================
-**1.0.0 beta-2: Minor fixes
+**1.0.0 beta-2: Minor fixes**
 ------------------------
 Justtt a bit more dopamine.
 
