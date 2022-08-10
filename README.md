@@ -13,18 +13,19 @@ Features
 - [x] **Generate visual map for:**
 - - [x] Stars: different visuals for _star_class_ and some modded ones
 - - [x] Hyperlanes: bridge and `no bridges o_O?`
-- - [ ] Wormholes: `Low-priority` There is an external section needed other than _galactic_object_
+- - [ ] Wormholes: `low-priority` There is an external section needed other than _galactic_object_
 - [x] **Map Editor for:**
 - - [x] Hyperlane: Connect/Disconnect
 - - [x] Star: Input, Drag-Drop, Arrow
-- - [ ] Wormholes: `Low-priority`
-- - [ ] Delete Star `Mid-priority` Just use the Star-Eater for now, I guess?
+- - [ ] Wormholes: `low-priority`
+- - [ ] Delete Star `mid-priority` Just use the Star-Eater for now, I guess?
 - [x] Save feature `DONE` `Unoptimized`
 - [x] **Miscellaneous**
 - - [x] Toggle visibility for Stars, Names, Hyperlane
 - - [x] Logs information to the DEBUG
 - - [x] Flips the x-plane to imitate the map. *toggleable*
 - - [x] Resume previous session, uses the original save-file. *toggleable*
+- - [ ] Mass editing `non-priority` Try to [manually edit them](https://github.com/neroiii/Stellaris_Galaxy_Editor#a-manual-way-to-edit) for now.
 
 Support
 ========================
@@ -125,7 +126,7 @@ _Fear the Blorg Aeternum!_
 
 **0.9.2: Drag-drop savefile, read, parse, generate visual.**
 ------------------------
-* Installed Godot Lua Plugin, rewrote my lua scripts
+* Added [https://github.com/gilzoide/godot-lua-pluginscript](https://github.com/gilzoide/godot-lua-pluginscript), rewrote my lua scripts from scratch
 * Parses the contents of the star section of the save game using Lua since their string functions are crucial for pattern-matching.
 * It can get most from elements to sub-elements either if it's used right now or not but I'm still confused why it can't get some things sometimes,  added contingencies as solution for necessary variables especially the `bridge` variable in the `hyperlane`.
 * Can drag and drop `gamestate` file to the executable to start the visual generation, so far it's the only way to initiate it.
@@ -139,7 +140,7 @@ _Merged too many savefiles in one, the parallel universes are merging!_
 
 **0.9: Edit Stars by dragging and clicking and optimized all code**
 ------------------------
-For a month now, I have coded all the basic features needed to edit star position and the hyperlanes from scratch. The only thing I'm lacking of is translating the Lua code I made for decoding and encoding, which might be another headache. Therefore, I will take a break from this after I complete my summer classes cause this is turning into my addiction.
+For a month now, I have coded all the basic features needed to edit star position and the hyperlanes from scratch. The only thing I'm lacking of is translating the Lua code I made for parsing and packing, which might be another headache. Therefore, I will take a break from this after I complete my summer classes cause this is turning into my addiction.
 * Optimized all code, by optimized, I compressed lines into a "for (key) in (array)" hell.
 * Added ability to edit stars by dragging and clicking arrows
 
@@ -171,7 +172,7 @@ _Results of mass editing: changing the coordinates work but changing the hyperla
 <img src="https://user-images.githubusercontent.com/107048186/177850451-0274c56a-cdd4-4357-a741-e380f98c53d8.png" width="480" height="330">
 
 
-* Cleaned the test files except for the saves, optimized decode and encode.
+* Cleaned the test files except for the saves, optimized parsing and packing.
 * Added else if statement because the string pattern matching goes bananas and decides to switch to another pattern type.
 * Can read then write and replace.
 * Positions can be changed, doesn't seem to crash but hyperlanes are an issue, they cause the crash on mass edit
