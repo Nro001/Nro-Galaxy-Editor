@@ -79,7 +79,7 @@ Changing to another save-file
 ------------------------
 If you want to change to another save-file, simply drag your new `gamestate` to the screen
 * If there is an error or bug, exit the application and open it again.
-* If the application is set to resume the previous session, either delete `.../save-file/parsed` or go to the app directory `.../save-file/settings` and change it to `ResPrev=false`
+* If the application is set to resume the previous session, either delete `.../save-file/parsed` or go to the app directory `.../save-file/settings` and change it to `ResPrev=0`
 
 Another way to edit
 ------------------------
