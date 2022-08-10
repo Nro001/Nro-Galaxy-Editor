@@ -35,6 +35,7 @@ Unfortunately, I can't make a PayPal account right now cause the validation ID s
 Usage
 ========================
 The save-file doesn't need to be a fresh start, it can be used any point in time of the game. The size of the save-file only affects how long it will take to process.
+Post your creations on the [discussions](https://github.com/neroiii/Stellaris_Galaxy_Editor/discussions)!
 
 Initial
 ------------------------
