@@ -4,8 +4,7 @@ As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and
 
 This is just a small project that generates visual map to edit the position of stars and connects/disconnects hyperlanes. This is also my first project that I actually finished so if there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
 
-Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating, coding and tweaking.
-
+Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
 
 
 Features
@@ -100,6 +99,13 @@ This project uses the following software:
 
 Changelog
 ========================
+**1.0.0 beta-2: Minor fixes
+------------------------
+Justtt a bit more dopamine.
+
+* Fixed [Resume], now works properly
+* Fixed clearing previous maps, made a better alternative.
+
 **1.0.0 beta: It can now save!** Repository now public.
 ------------------------
 Now I take a break.
