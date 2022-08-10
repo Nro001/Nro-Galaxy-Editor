@@ -6,6 +6,8 @@ This is just a small project that generates visual map to edit the position of s
 
 Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating, coding and tweaking.
 
+If there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
+
 Features
 ========================
 - [x] Parses the _galactic_object_ of the save-file. Basically, stars and hyperlanes.
@@ -46,6 +48,7 @@ Simply, run the application and drag and drop the `gamestate` file inside your s
 Camera Controls
 ------------------------
 * Movement: Keyboard arrows or `W` `A` `S` `D`
+* Dash: Hold `Shift` to dash
 * Zoom: Hold `Q` to zoom-out and `E` to zoom-in
 * Reset: Press `R` to reset position and zoom
 * Name: Hold `Alt` to temporarily show or hide star names 
