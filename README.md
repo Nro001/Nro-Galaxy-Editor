@@ -1,7 +1,6 @@
 ![icon](https://user-images.githubusercontent.com/107048186/183308766-ef93d871-3cb2-441c-b978-fff1da15a5dc.png)
 # Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
-
 This is just a small project that generates visual map to edit the position of stars and connects/disconnects hyperlanes. This is also my first project that I actually finished so if there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
 
 Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
@@ -40,11 +39,18 @@ Post your creations on the [discussions](https://github.com/neroiii/Stellaris_Ga
 
 Initial
 ------------------------
-Simply, run the application and drag and drop the `gamestate` file inside your save to the screen. If the application freezes, Lua is probably running the scripts. **DON'T FORGET TO CHECK THE DEBUG FOR THE STATUS**
-* If you don't know how to get the file, you can go to the wiki for further instuctions: [Save-game editing](https://stellaris.paradoxwikis.com/Save-game_editing).
-* Use [Notepad++](https://notepad-plus-plus.org/downloads/) if you want to open `gamestate` and save changes
-* App Directory: `%APPDATA%/Stellaris-Galaxy-Editor/`
-  * *If anyone has idea where they are in other OS please let me know*
+Before starting your ~~shenanigans~~ divine intervention:
+* You must use [7-zip](https://www.7-zip.org/) for opening the save-files.
+* You must use [Notepad++](https://notepad-plus-plus.org/downloads/) if you want to open the files
+* For further instrunctions on save files and where to locate them: [Save-game editing](https://stellaris.paradoxwikis.com/Save-game_editing).
+* App Directory: `%APPDATA%/Nro-Galaxy-Editor/`
+
+
+1. There are now two methods on how to start editing:
+   * `NEW METHOD` : Simply, drag your `.sav` file to the screen
+   * `ORIGINAL METHOD` : Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
+   
+2. Either way, the application will freeze as it tries to read the contents. Check the DEBUG (Command-line) for their status. 
 
 Camera Controls
 ------------------------
@@ -62,35 +68,39 @@ There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon t
   * `Input`: Click the x or y input bar to change then press Enter. 
   * `Arrow`: Click the white cardinal arrows.
   * `Drag`: Click the star first then drag them anywhere. Negative values makes the drag smoother.     Range: 2 to (-3)
-* **Hyperlane Editor**: click a star and another star to either connect or disconnect, automatically decides based on wether there is already connection. Click on the star itself if you want to cancel.
+* **Hyperlane Editor**: click a star and another star to either connect or disconnect, automatically decides based on whether there is already a connection. Click on the star itself if you want to cancel.
 * **Miscellaneous**
   * `Flip`: map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
-  * `Resume`: resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag another gamestate to the screen 
-
+  * `Resume`: resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag the saved gamestate.
 Saving
 ------------------------
-To save the changes you have made: Simply click `Map`->`Save`. It will freeze the game as the Lua is running the scripts. This will take a bit of time, the more the save-file is larger. Check the DEBUG for status.
-* The results of the changes are located: `.../save-file/packed/`
-* There are two files you can choose that are created after you export:
-  * `galactic-object-modified`: A more safer method. Using Notepad++ highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy `Ctrl+C` then open your original gamestate (make a copy) and search for `galactic_object={` then highlight the `{` only and press `Ctrl+Alt+B` then paste `Ctrl+V` then save. Make sure "galactic_object={" is not duplicated.
-  * `gamestate`: A less safer method. There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause something but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
-* After that, open .sav file (make a copy) and paste the modified gamestate.
+To save the changes you have made: Simply click `Map`->`Save`. The application will freeze while it's packing the files, the larger the save is, the longer it will take. Check the Debug for status.
+
+* The results of the changes are located: `.../packed/`
+* Since there are difficulties in packing the file itself, two files are created instead as a result: `gamestate` and `galactic-object-modified`
+* These two files are methods on how you can put the modified gamestate:
+
+  * `gamestate`: A less safer method but less work. Issues: There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
+  
+  * `galactic-object-modified`: A more safer method. Open this file using Notepad++ and then highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy what is highlighted. Open your original gamestate (make a copy) and also search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` again then paste what you copied before. Save and make sure "galactic_object={" is not duplicated.
+
+* After that whole debacle, open .sav file (make a copy) and paste the modified gamestate.
 
 Changing to another save-file
 ------------------------
 If you want to change to another save-file, simply drag your new `gamestate` to the screen
 * If there is an error or bug, exit the application and open it again.
-* If the application is set to resume the previous session, either delete `.../save-file/parsed` or go to the app directory `.../save-file/settings` and change it to `ResPrev=0`
+* If the application is set to resume the previous session, either delete `.../parsed` or go to the app directory `.../settings` and change it to `ResPrev=0`
 
 A manual way to edit
 ------------------------
-If the application is too buggy for you and you have already generated a galaxy then toggle the [Resume] button or change the settings to ResPrev=1 then go to `.../save-file/parsed` and there you can edit them manually using Notepad++.
+If the application is too buggy for you, generate a galaxy on the application then toggle the [Resume] button or change the settings to ResPrev=1 then go to `.../parsed` and there you can edit them manually using Notepad++.
 
-The data's template can be translated as:
+The data's template can be translated as: `file` : `attributes`
 * `stars` : `ID`,`x`,`y`,`star_name`,`star_class`
 * `hyperlanes` : `ID`,  (`to`,`length`,`bridge`)
 
-Open the application again, assuming resume is set to true, and then save, voilà!
+Open the application again, assuming resume is toggled, and then save again, voilà!
 
 Software
 ========================
@@ -99,10 +109,18 @@ This project uses [Godot Engine](https://github.com/godotengine/godot) to create
 Third-party software:
 ------------------------
 * [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript)
+* [gdunzip](https://github.com/jellehermsen/gdunzip)
 
 
 Changelog
 ========================
+**1.0.0 beta-3: .sav file now draggable, output directory opens**
+------------------------
+Minor additions for convenience.
+
+* [.sav] files or the save-file itself can now be dragged to the screen!
+* The output directory will now open after saving is finished.
+
 **1.0.0 beta-2: Minor fixes**
 ------------------------
 Justtt a bit more dopamine.
