@@ -1,6 +1,7 @@
 ![icon](https://user-images.githubusercontent.com/107048186/183308766-ef93d871-3cb2-441c-b978-fff1da15a5dc.png)
 # Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
+
 This is just a small project that generates visual map to edit the position of stars and connects/disconnects hyperlanes. This is also my first project that I actually finished so if there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
 
 Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
@@ -84,7 +85,7 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
   
   * `galactic-object-modified`: A more safer method. Open this file using Notepad++ and then highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy what is highlighted. Open your original gamestate (make a copy) and also search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` again then paste what you copied before. Save and make sure "galactic_object={" is not duplicated.
 
-* After that whole debacle, open .sav file (make a copy) and paste the modified gamestate.
+* After that whole debacle, make a copy of the .sav file you used and open it using 7-zip and drag the modified gamestate there, the file must be overwriten and bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? 
 
 Changing to another save-file
 ------------------------
