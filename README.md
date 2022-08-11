@@ -43,7 +43,7 @@ Initial
 Before starting your ~~shenanigans~~ divine intervention:
 * You must use [7-zip](https://www.7-zip.org/) for opening the save-files.
 * You must use [Notepad++](https://notepad-plus-plus.org/downloads/) if you want to open the files
-* For further instrunctions on save files and where to locate them: [Save-game editing](https://stellaris.paradoxwikis.com/Save-game_editing).
+* For further instructions on save files and where to locate them: [Save-game editing](https://stellaris.paradoxwikis.com/Save-game_editing).
 * App Directory: `%APPDATA%/Nro-Galaxy-Editor/`
 
 
@@ -73,6 +73,7 @@ There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon t
 * **Miscellaneous**
   * `Flip`: map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
   * `Resume`: resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag the saved gamestate.
+  
 Saving
 ------------------------
 To save the changes you have made: Simply click `Map`->`Save`. The application will freeze while it's packing the files, the larger the save is, the longer it will take. Check the Debug for status.
@@ -83,9 +84,9 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
 
   * `gamestate`: A less safer method but less work. Issues: There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
   
-  * `galactic-object-modified`: A more safer method. Open this file using Notepad++ and then highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy what is highlighted. Open your original gamestate (make a copy) and also search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` again then paste what you copied before. Save and make sure "galactic_object={" is not duplicated.
+  * `galactic-object-modified`: A more safer method. Open this file using Notepad++ and then highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy what is highlighted. Open your original gamestate (make a copy) and also search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` again then paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
-* After that whole debacle, make a copy of the .sav file you used and open it using 7-zip and drag the modified gamestate there, the file must be overwriten and bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? 
+* After that whole debacle, make a copy of the .sav file you used and open it using 7-zip and drag the modified gamestate there, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? 
 
 Changing to another save-file
 ------------------------
@@ -100,6 +101,9 @@ If the application is too buggy for you, generate a galaxy on the application th
 The data's template can be translated as: `file` : `attributes`
 * `stars` : `ID`,`x`,`y`,`star_name`,`star_class`
 * `hyperlanes` : `ID`,  (`to`,`length`,`bridge`)
+
+*Note: new stars can't be added as it does not have an existing file on the unpacked folder and it is not advisable to delete them for now. 
+Hyperlanes on the other hand, can be modified but you must add it on both IDs for it to work, it must be paired.
 
 Open the application again, assuming resume is toggled, and then save again, voilà!
 
