@@ -7,12 +7,18 @@ This is just a small project that generates visual map to edit the position of s
 Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
 
 
+[`Features`](#features) [`Support`](#support) [`Software`](#software) [`Changelog`](#changelog) [`Instructions`](#instructions-and-usage)
+------------------------
+[`Initial`](#initial) [`Controls`](#camera-controls) [`Buttons`](#buttons) [`Saving`](#saving) [`Changing`](#changing-to-another-save-file) [`Manual Edit`](#a-manual-way-to-edit)
+------------------------
+
 Features
 ========================
 - [x] Parses the _galactic_object_ of the save-file. Basically, stars and hyperlanes.
 - [x] **Generate visual map for:**
 - - [x] Stars: different visuals for _star_class_ and some modded ones
 - - [x] Hyperlanes: bridge and `no bridges o_O?`
+- - [ ] Simulating borders `high priority` There is an external section so it might take long to code.
 - - [ ] Wormholes: `low-priority` There is an external section needed other than _galactic_object_
 - [x] **Map Editor for:**
 - - [x] Hyperlane: Connect/Disconnect
@@ -60,6 +66,7 @@ Camera Controls
 * Zoom: Hold `Q` to zoom-out and `E` to zoom-in
 * Reset: Press `R` to reset position and zoom
 * Name: Hold `Alt` to temporarily show or hide star names 
+* Cancel: Press `Esc` to cancel editor
 
 Buttons
 ------------------------
