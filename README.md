@@ -7,9 +7,9 @@ This is just a small project that generates visual map to edit the position of s
 Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
 
 
-[`Features`](#features) [`Support`](#support) [`Software`](#software) [`Changelog`](#changelog) 
+[`Features`](#features) [`Support`](#support) [`Software`](#software) [`Changelog`](#changelog) [`Instructions`](#instructions-and-usage)
 ------------------------
-[`Instructions`](#instructions-and-usage) : [`Initial`](#initial) [`Controls`](#camera-controls) [`Buttons`](#buttons) [`Saving`](#saving) [`Changing`](#changing-to-another-save-file) [`Manual Edit`](#a-manual-way-to-edit)
+[`Initial`](#initial) [`Controls`](#camera-controls) [`Buttons`](#buttons) [`Saving`](#saving) [`Changing`](#changing-to-another-save-file) [`Manual Edit`](#a-manual-way-to-edit)
 ------------------------
 
 Features
