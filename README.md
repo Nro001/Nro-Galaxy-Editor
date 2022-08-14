@@ -7,7 +7,7 @@ This is just a small project that generates visual map to edit the position of s
 Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
 
 
-[`Features`](#features) [`Support`](#support) [`Software`](#software) [`Changelog`](#changelog) [`Instructions`](#instructions-and-usage)
+[`Features`](#features) [`Support`](#support) [`Software`](#software) [`Changelog`](#changelog) [`Instructions`](#instructions-and-usage) [`Troubleshooting`](#troubleshooting)
 ------------------------
 [`Initial`](#initial) [`Controls`](#camera-controls) [`Buttons`](#buttons) [`Saving`](#saving) [`Changing`](#changing-to-another-save-file) [`Manual Edit`](#a-manual-way-to-edit)
 ------------------------
@@ -94,6 +94,17 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
   * `galactic-object-modified`: A more safer method. Open this file using Notepad++ and then highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy what is highlighted. Open your original gamestate (make a copy) and also search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` again then paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
 * After that whole debacle, make a copy of the .sav file you used and open it using 7-zip and drag the modified gamestate there, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? 
+
+Troubleshooting
+------------------------
+**All the stars are gone! Why? Did the Prethoryn or Unbidden came?**
+
+From my experience, there's two possible reasons for that
+* The `galactic_object={` is duplicated in which case it becomes `galactic_object=galactic_object={`, delete that duplicate. This usually happens when the contents of `galactic-object-modified` is not copied properly, only highlight `{` and press `Ctrl+Alt+B` and copy.
+* You created/archive a new .sav file, it is not recommended as it would require following these [compression configurations](https://stellaris.paradoxwikis.com/Save-game_editing#Compression_on_Windows). You should only copy your .sav file, open it in 7zip and drag your modified gamestate there so it is overwritten.
+  
+**I can't click anything on the editor**
+* Sometimes the entities are not deleted or replaced properly, just close the application.
 
 Changing to another save-file
 ------------------------
