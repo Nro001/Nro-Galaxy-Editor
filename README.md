@@ -93,7 +93,7 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
   
   * `galactic-object-modified`: A more safer method. Copy everything inside this file using Notepad++ then open your original gamestate (make a copy) and search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` then `Ctrl+V` to paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
-* After that whole debacle, make a copy of the .sav file you used and open it using 7-zip and drag the modified gamestate there, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? 
+* After that whole debacle, follow these steps properly, make a copy of the .sav file you used, **DON'T ARCHIVE, MAKE A COPY** and open it using 7-zip and drag the modified gamestate there **directly**, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? **Maybe it has always been there. What was, will be; What will be, was.**
 
 Troubleshooting
 ------------------------
