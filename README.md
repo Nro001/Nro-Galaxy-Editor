@@ -65,7 +65,7 @@ Camera Controls
 * Dash: Hold `Shift` to dash
 * Zoom: Hold `Q` to zoom-out and `E` to zoom-in
 * Reset: Press `R` to reset position and zoom
-* Name: Hold `Alt` to temporarily show or hide star names 
+* Name: Hold `Tab` to temporarily show or hide star names
 * Cancel: Press `Esc` to cancel editor
 
 Buttons
@@ -91,7 +91,7 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
 
   * `gamestate`: A less safer method but less work. Issues: There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
   
-  * `galactic-object-modified`: A more safer method. Open this file using Notepad++ and then highlight the `{` in `galactic_object={` and press `Ctrl+Alt+B` then copy what is highlighted. Open your original gamestate (make a copy) and also search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` again then paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
+  * `galactic-object-modified`: A more safer method. Copy everything inside this file using Notepad++ then open your original gamestate (make a copy) and search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` then `Ctrl+V` to paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
 * After that whole debacle, make a copy of the .sav file you used and open it using 7-zip and drag the modified gamestate there, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? 
 
@@ -105,6 +105,8 @@ From my experience, there's two possible reasons for that
   
 **I can't click anything on the editor**
 * Sometimes the entities are not deleted or replaced properly, just close the application.
+
+If there are any other issues, please go to the Issues tab and post your problem including your modified gamestate file if you can.
 
 Changing to another save-file
 ------------------------
