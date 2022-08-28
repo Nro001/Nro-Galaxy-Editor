@@ -144,7 +144,7 @@ Changelog
 ========================
 **1.0.0-stable: Hiatus: Search and Isolate Star functions added**
 ------------------------
-My Uni oficially starts this week so I won't be touching this project unless it's bug fixes.
+My Uni officially starts this week so I won't be touching this project unless it's bug fixes.
 
 * Search function: Uses Engine's String:Find function
 * Isolate Star function
@@ -153,7 +153,7 @@ My Uni oficially starts this week so I won't be touching this project unless it'
 * Changed [Info] to act like a tooltip
 * Fixed starbase_mgr getting cut or missing from [gamestate] method
 * Removed "galactic_object" from galactic_object-modified for convenience
-* [Escape] key adeed to cancel Editor
+* [Escape] key added to cancel Editor
 * Fixed Hyperlane being on top of Star
 * Updated README.md 
 
