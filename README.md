@@ -21,12 +21,13 @@ Features
 - - [ ] Simulating borders `high priority` There is an external section so it might take long to code.
 - - [ ] Wormholes: `low-priority` There is an external section needed other than _galactic_object_
 - [x] **Map Editor for:**
-- - [x] Hyperlane: Connect/Disconnect
+- - [x] Hyperlane: Connect/Disconnect, Isolate
 - - [x] Star: Input, Drag-Drop, Arrow
 - - [ ] Wormholes: `low-priority`
 - - [ ] Delete Star `mid-priority` Just use the Star-Eater for now, I guess?
-- [x] Save feature `DONE` `Unoptimized`
+- [x] Save feature `DONE`
 - [x] **Miscellaneous**
+- - [x] Search function 
 - - [x] Toggle visibility for Stars, Names, Hyperlane
 - - [x] Logs information to the DEBUG
 - - [x] Flips the x-plane to imitate the map. *toggleable*
@@ -55,7 +56,7 @@ Before starting your ~~shenanigans~~ divine intervention:
 
 1. There are now two methods on how to start editing:
    * `NEW METHOD` : Simply, drag your `.sav` file to the screen (This might take longer especially on mid-game saves, try to use the original method instead if it does not work)
-   * `ORIGINAL METHOD` : Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
+   * `RECOMMENDED METHOD` : Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
    
 2. Either way, the application will freeze as it tries to read the contents. Check the DEBUG (Command-line) for their status. 
 
@@ -77,9 +78,11 @@ There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon t
   * `Arrow`: Click the white cardinal arrows.
   * `Drag`: Click the star first then drag them anywhere. Negative values makes the drag smoother.     Range: 2 to (-3)
 * **Hyperlane Editor**: click a star and another star to either connect or disconnect, automatically decides based on whether there is already a connection. Click on the star itself if you want to cancel.
+  * `Isolate`: Click on any star to remove all of its hyperlane `NEW`
 * **Miscellaneous**
-  * `Flip`: map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
-  * `Resume`: resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag the saved gamestate.
+  * `Search`: Can use ID or Star's name to possibly find what you look for, if an input exist, it will go to the first star found. `NEW` 
+  * `Flip`: Map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
+  * `Resume`: Resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag the saved gamestate.
   
 Saving
 ------------------------
@@ -139,6 +142,21 @@ Third-party software:
 
 Changelog
 ========================
+**1.0.0-stable: Hiatus: Search and Isolate Star functions added**
+------------------------
+My Uni oficially starts this week so I won't be touching this project unless it's bug fixes.
+
+* Search function: Uses Engine's String:Find function
+* Isolate Star function
+* Link Button to GitHub
+* Fixed Camera boundaries due to [Flip]
+* Changed [Info] to act like a tooltip
+* Fixed starbase_mgr getting cut or missing from [gamestate] method
+* Removed "galactic_object" from galactic_object-modified for convenience
+* [Escape] key adeed to cancel Editor
+* Fixed Hyperlane being on top of Star
+* Updated README.md 
+
 **1.0.0 beta-3: .sav file now draggable, output directory opens**
 ------------------------
 Minor additions for convenience.
