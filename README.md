@@ -115,11 +115,11 @@ Changing to another save-file
 ------------------------
 If you want to change to another save-file, simply drag your new `gamestate` to the screen
 * If there is an error or bug, exit the application and open it again.
-* If the application is set to resume the previous session, either delete `.../parsed` or go to the app directory `.../settings` and change it to `ResPrev=0`
+* If the application is set to resume the previous session, either delete `.../parsed` or go to the app directory `.../settings` and change it to `Resume=0`
 
 A manual way to edit
 ------------------------
-If the application is too buggy for you, generate a galaxy on the application then toggle the [Resume] button or change the settings to ResPrev=1 then go to `.../parsed` and there you can edit them manually using Notepad++.
+If the application is too buggy for you, generate a galaxy on the application then toggle the [Resume] button or change the settings to Resume=1 then go to `.../parsed` and there you can edit them manually using Notepad++.
 
 The data's template can be translated as: `file` : `attributes`
 * `stars` : `ID`,`x`,`y`,`star_name`,`star_class`
