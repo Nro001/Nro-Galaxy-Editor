@@ -55,8 +55,8 @@ Before starting your ~~shenanigans~~ divine intervention:
 
 
 1. There are now two methods on how to start editing:
-   * `NEW METHOD` : Simply, drag your `.sav` file to the screen (This might take longer especially on mid-game saves, try to use the original method instead if it does not work)
-   * `RECOMMENDED METHOD` : Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
+   * `NEW METHOD` : Simply, drag your `.sav` file to the screen (This might take really long because it takes time to uncompress a file especially on mid-game saves, try to use the original method instead if it does not work)
+   * `ORIGINAL METHOD` : `RECOMMENDED` Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
    
 2. Either way, the application will freeze as it tries to read the contents. Check the DEBUG (Command-line) for their status. 
 
