@@ -44,6 +44,8 @@ Video Tutorial
 ========================
 https://www.youtube.com/watch?v=pAMM_ObnhUs
 
+[![Watch the video](https://img.youtube.com/vi/pAMM_ObnhUs/maxresdefault.jpg)](https://youtu.be/pAMM_ObnhUs)
+
 Instructions and Usage
 ========================
 The save-file doesn't need to be a fresh start, it can be used any point in time of the game. The size of the save-file only affects how long it will take to process.
