@@ -1,4 +1,4 @@
-![icon](https://user-images.githubusercontent.com/107048186/183308766-ef93d871-3cb2-441c-b978-fff1da15a5dc.png)
+<img src="https://user-images.githubusercontent.com/107048186/212237920-09d01e3c-0f46-4759-b3ae-d39c05d73383.png" width="250" height="250">
 # Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
 
@@ -39,6 +39,10 @@ Support
 **_I have seven cats, seven hells, help me buy cat food._**
 
 Unfortunately, I can't make a PayPal account right now cause the validation ID seems to take a year to be processed and delivered t-t
+
+Video Tutorial
+========================
+https://www.youtube.com/watch?v=pAMM_ObnhUs
 
 Instructions and Usage
 ========================
@@ -142,6 +146,15 @@ Third-party software:
 
 Changelog
 ========================
+**1.1.0-stable: UI + Video Tutorial**
+------------------------
+I have been to busy with uni these days so I can't do any big changes with the editor
+
+* Made the UI less crappy and added some small features
+* Added much need information in the editor
+* Made a video tutorial
+* Updated README.md 
+
 **1.0.0-stable: Hiatus: Search and Isolate Star functions added**
 ------------------------
 My Uni officially starts this week so I won't be touching this project unless it's bug fixes.
