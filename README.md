@@ -1,4 +1,5 @@
 <img src="https://user-images.githubusercontent.com/107048186/212237920-09d01e3c-0f46-4759-b3ae-d39c05d73383.png" width="250" height="250">
+
 # Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
 
