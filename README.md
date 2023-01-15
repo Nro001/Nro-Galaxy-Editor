@@ -13,6 +13,9 @@ Note: I will be taking a break **now** as I have completed the main objectives. 
 [`Initial`](#initial) [`Controls`](#camera-controls) [`Buttons`](#buttons) [`Saving`](#saving) [`Changing`](#changing-to-another-save-file) [`Manual Edit`](#a-manual-way-to-edit)
 ------------------------
 
+![square](https://user-images.githubusercontent.com/107048186/212534084-3a9ac24b-1a95-4ab4-975b-2f5fb42352ef.png)
+
+
 Features
 ========================
 - [x] Parses the _galactic_object_ of the save-file. Basically, stars and hyperlanes.
