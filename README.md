@@ -166,11 +166,11 @@ Third-party software:
 
 Changelog
 ========================
-**1.6-release: Fixed for 3.3x**
+**1.6-release: Fixed for 3.10x**
 ------------------------
-It now works with 3.3x games, I might add new features like wormhole editing but I'm still too busy right now.
+It now works with 3.10x games, I might add new features like wormhole editing but I'm still too busy right now.
 
-* Now works for 3.3+ Stellaris, they changed the format a bit, my code was specific on how it edits the variables so I had to change it.
+* Now works for 3.10+ Stellaris, they changed the format a bit, my code was specific on how it edits the variables so I had to change it.
 * Added mouse wheel to zoom
 * Tweaked Search feature
 * Changed JSON to a format that isn't one-lined (didn't know it was possible)
