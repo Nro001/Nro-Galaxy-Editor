@@ -1,5 +1,9 @@
 <img src="https://user-images.githubusercontent.com/107048186/212237920-09d01e3c-0f46-4759-b3ae-d39c05d73383.png" width="250" height="250">
 
+[<img alt="Donate" width="250px" src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/4edb1609-e3d4-437e-8b43-43d34f293b16" />](https://ko-fi.com/O4O2UEDP5)
+
+**For anyone using v1.5 before, delete the files in `%APPDATA%/Nro-Galaxy-Editor/`**
+
 # Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
 
@@ -15,7 +19,6 @@ Note: I will be taking a break **now** as I have completed the main objectives. 
 
 ![square](https://user-images.githubusercontent.com/107048186/212534084-3a9ac24b-1a95-4ab4-975b-2f5fb42352ef.png)
 ![Screenshot (22)](https://user-images.githubusercontent.com/107048186/222201630-fc28dcfb-2594-4d9f-8f70-85018f5a61f2.png)
-
 
 
 Features
@@ -44,9 +47,9 @@ Support
 ========================
 **_I have seven cats, seven hells, help me buy cat food._**
 
-Unfortunately, I can't make a PayPal account right now cause the validation ID seems to take a year to be processed and delivered t-t
+[<img alt="Donate" width="300px" src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/4edb1609-e3d4-437e-8b43-43d34f293b16" />](https://ko-fi.com/O4O2UEDP5)
 
-**Update: It's been more than a year now but I'm still unable to get them and I don't know other alternatives that doesn't use PayPal only.**
+**Update: *I was finally able to make a kofi! also we have ten cats, three dogs now.***
 
 Video Tutorial
 ========================
@@ -68,18 +71,15 @@ Before starting your ~~shenanigans~~ divine intervention:
 * App Directory: `%APPDATA%/Nro-Galaxy-Editor/`
 
 
-1. ~~There are now two methods on how to start editing:~~
-   ~~* `NEW METHOD` : Simply, drag your `.sav` file to the screen (This might take really long because it takes time to uncompress a file especially on mid-game saves, try to use the original method instead if it does not work)~~
-  ~~* `ORIGINAL METHOD` : `RECOMMENDED`~~ 
-   Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
+1. Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
    
-2. Either way, the application will freeze as it tries to read the contents. ~~Check the DEBUG (Command-line) for their status. 
+2. Either way, the application will freeze as it tries to read the contents. ~Check the logs for their status.~
 
 Camera Controls
 ------------------------
 * Movement: Keyboard arrows or `W` `A` `S` `D`
 * Dash: Hold `Shift` to dash
-* Zoom: Hold `Q` to zoom-out and `E` to zoom-in
+* Zoom: Hold `Q` to zoom-out and `E` to zoom-in (NEW: `Mouse wheel` now works too)
 * Reset: Press `R` to reset position and zoom
 * Name: Hold `Tab` to temporarily show or hide star names
 * Cancel: Press `Esc` to cancel editor
@@ -108,8 +108,10 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
 * Since there are difficulties in packing the file itself, two files are created instead as a result: `gamestate` and `galactic-object`
 * These two files are methods on how you can put the modified gamestate:
 
-  * `gamestate`: ~~A less safer method but less work. Issues: There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."~~ It is relatively safe now since I used a different way of saving it.
-  
+  * `gamestate`: It is relatively safe now since I used a different way of saving it.
+
+**NOTE: This is before 3.3, `galactic_object={` is now `galactic_object=` new line `{`**
+ 
   * `galactic-object`: A more safer method. Copy everything inside this file using Notepad++ then open your original gamestate (make a copy) and search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` then `Ctrl+V` to paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
 * After that whole debacle, follow these steps properly, make a copy of the .sav file you used, **DON'T ARCHIVE, MAKE A COPY** and open it using 7-zip and drag the modified gamestate there **directly**, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? **Maybe it has always been there. What was, will be; What will be, was.**
@@ -119,7 +121,10 @@ Troubleshooting
 **All the stars are gone! Why? Did the Prethoryn or Unbidden came?**
 
 From my experience, there's two possible reasons for that
-* The `galactic_object={` is duplicated in which case it becomes `galactic_object=galactic_object={`, delete that duplicate. This usually happens when the contents of `galactic-object-modified` is not copied properly, only highlight `{` and press `Ctrl+Alt+B` and copy.
+
+**NOTE: This is before 3.3, `galactic_object={` is now `galactic_object=` new line `{`**
+
+* The `galactic_object={` is duplicated in which case it becomes `galactic_object=galactic_object={`, delete that duplicate. This usually happens when the contents of `galactic-object` is not copied properly, only highlight `{` and press `Ctrl+Alt+B` and copy.
 * You created/archive a new .sav file, it is not recommended as it would require following these [compression configurations](https://stellaris.paradoxwikis.com/Save-game_editing#Compression_on_Windows). You should only copy your .sav file, open it in 7zip and drag your modified gamestate there so it is overwritten.
   
 **I can't click anything on the editor**
@@ -161,6 +166,15 @@ Third-party software:
 
 Changelog
 ========================
+**1.6-release: Fixed for 3.3x**
+------------------------
+It now works with 3.3x games, I might add new features like wormhole editing but I'm still too busy right now.
+
+* Now works for 3.3+ Stellaris, they changed the format a bit, my code was specific on how it edits the variables so I had to change it.
+* Added mouse wheel to zoom
+* Tweaked Search feature
+* Changed JSON to a format that isn't one-lined (didn't know it was possible)
+  
 **1.5-release: Sandbox**
 ------------------------
 This might be my last big update for this editor, I'm too busy irl.
