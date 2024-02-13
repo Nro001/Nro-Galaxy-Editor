@@ -14,6 +14,8 @@ Note: I will be taking a break **now** as I have completed the main objectives. 
 ------------------------
 
 ![square](https://user-images.githubusercontent.com/107048186/212534084-3a9ac24b-1a95-4ab4-975b-2f5fb42352ef.png)
+![Screenshot (22)](https://user-images.githubusercontent.com/107048186/222201630-fc28dcfb-2594-4d9f-8f70-85018f5a61f2.png)
+
 
 
 Features
@@ -44,6 +46,8 @@ Support
 
 Unfortunately, I can't make a PayPal account right now cause the validation ID seems to take a year to be processed and delivered t-t
 
+**Update: It's been more than a year now but I'm still unable to get them and I don't know other alternatives that doesn't use PayPal only.**
+
 Video Tutorial
 ========================
 https://www.youtube.com/watch?v=pAMM_ObnhUs
@@ -64,11 +68,12 @@ Before starting your ~~shenanigans~~ divine intervention:
 * App Directory: `%APPDATA%/Nro-Galaxy-Editor/`
 
 
-1. There are now two methods on how to start editing:
-   * `NEW METHOD` : Simply, drag your `.sav` file to the screen (This might take really long because it takes time to uncompress a file especially on mid-game saves, try to use the original method instead if it does not work)
-   * `ORIGINAL METHOD` : `RECOMMENDED` Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
+1. ~~There are now two methods on how to start editing:~~
+   ~~* `NEW METHOD` : Simply, drag your `.sav` file to the screen (This might take really long because it takes time to uncompress a file especially on mid-game saves, try to use the original method instead if it does not work)~~
+  ~~* `ORIGINAL METHOD` : `RECOMMENDED`~~ 
+   Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
    
-2. Either way, the application will freeze as it tries to read the contents. Check the DEBUG (Command-line) for their status. 
+2. Either way, the application will freeze as it tries to read the contents. ~~Check the DEBUG (Command-line) for their status. 
 
 Camera Controls
 ------------------------
@@ -93,18 +98,19 @@ There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon t
   * `Search`: Can use ID or Star's name to possibly find what you look for, if an input exist, it will go to the first star found. `NEW` 
   * `Flip`: Map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
   * `Resume`: Resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag the saved gamestate.
+  * `Sandbox`: Turns the map into spiral
   
 Saving
 ------------------------
 To save the changes you have made: Simply click `Map`->`Save`. The application will freeze while it's packing the files, the larger the save is, the longer it will take. Check the Debug for status.
 
 * The results of the changes are located: `.../packed/`
-* Since there are difficulties in packing the file itself, two files are created instead as a result: `gamestate` and `galactic-object-modified`
+* Since there are difficulties in packing the file itself, two files are created instead as a result: `gamestate` and `galactic-object`
 * These two files are methods on how you can put the modified gamestate:
 
-  * `gamestate`: A less safer method but less work. Issues: There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."
+  * `gamestate`: ~~A less safer method but less work. Issues: There's a "*Unicode error: invalid skip*" for this so I don't know if it might cause but I tested this on a fresh save and it still works although there's a line on the error.log: "*Repaired savegame, cleared 11 invalid deposits!*."~~ It is relatively safe now since I used a different way of saving it.
   
-  * `galactic-object-modified`: A more safer method. Copy everything inside this file using Notepad++ then open your original gamestate (make a copy) and search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` then `Ctrl+V` to paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
+  * `galactic-object`: A more safer method. Copy everything inside this file using Notepad++ then open your original gamestate (make a copy) and search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` then `Ctrl+V` to paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
 * After that whole debacle, follow these steps properly, make a copy of the .sav file you used, **DON'T ARCHIVE, MAKE A COPY** and open it using 7-zip and drag the modified gamestate there **directly**, the file must be overwriten to work and then bam! you're done! Congratulations, now the denizens of your galaxy are confused why their constellations have changed in just a day. Was there a large clusters of wormhole that transported everyone there? Did some shmuck invented teleportation and suddenly pressed the big red button? or is everything just a simulation? Who knows? **Maybe it has always been there. What was, will be; What will be, was.**
 
@@ -129,6 +135,8 @@ If you want to change to another save-file, simply drag your new `gamestate` to 
 
 A manual way to edit
 ------------------------
+**Note: This is still doable but the files mentioned here are now formatted in JSON**
+
 If the application is too buggy for you, generate a galaxy on the application then toggle the [Resume] button or change the settings to Resume=1 then go to `.../parsed` and there you can edit them manually using Notepad++.
 
 The data's template can be translated as: `file` : `attributes`
@@ -146,12 +154,25 @@ This project uses [Godot Engine](https://github.com/godotengine/godot) to create
 
 Third-party software:
 ------------------------
-* [Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript)
-* [gdunzip](https://github.com/jellehermsen/gdunzip)
+~~[Godot Lua PluginScript](https://github.com/gilzoide/godot-lua-pluginscript)~~
+
+~~[gdunzip](https://github.com/jellehermsen/gdunzip)~~
 
 
 Changelog
 ========================
+**1.5-release: Sandbox**
+------------------------
+This might be my last big update for this editor, I'm too busy irl.
+
+* Added Square Spiral and Ring maker
+* Added Demo button on start screen
+* Rewrote most of the code so it runs more faster now.
+* Reworked some of the UI
+* Switched to JSON format
+* Removed Lua dependency and converted to purely GDScript
+* Removed gdunzip
+
 **1.1.0-stable: UI + Video Tutorial**
 ------------------------
 I have been to busy with uni these days so I can't do any big changes with the editor
