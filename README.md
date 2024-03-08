@@ -191,6 +191,12 @@ Woah, quite a jump in the version number there!
 * `Drag` - Right mouse button
 * `Scale UI` - Ctrl [+ -] 
 * Disabled Sandbox for now due to UI changes, you can use the previous version for it.
+  
+<img src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/68924dc6-6a30-4370-9754-44c96df50ee2" width="575.21" height="337.8"> <img src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/fb32ca6a-3049-44cf-95f6-4c0d644f5793" width="500" height="337.8">
+
+
+  
+
 
 **1.6-release: Fixed for 3.10x**
 ------------------------
