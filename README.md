@@ -2,6 +2,9 @@
 
 [<img alt="Donate" width="250px" src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/4edb1609-e3d4-437e-8b43-43d34f293b16" />](https://ko-fi.com/O4O2UEDP5)
 
+You can support me on Ko-Fi, this is also where I release any current updates.
+
+
 **For anyone using v1.5 before, delete the files in `%APPDATA%/Nro-Galaxy-Editor/`**
 
 # Nro's Galaxy Editor for Stellaris
