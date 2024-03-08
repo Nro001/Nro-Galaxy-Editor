@@ -35,6 +35,7 @@ Features
 - [x] **Map Editor for:**
 - - [x] Hyperlane: Connect/Disconnect, Isolate
 - - [x] Star: Input, Drag-Drop, Arrow
+- - [x] Nebula: Include, Exclude, Move, Size `NEW`
 - - [ ] Wormholes: `low-priority`
 - - [ ] Delete Star `mid-priority` Just use the Star-Eater for now, I guess?
 - [x] Save feature `DONE`
@@ -74,18 +75,20 @@ Before starting your ~~shenanigans~~ divine intervention:
 * App Directory: `%APPDATA%/Nro-Galaxy-Editor/`
 
 
-1. Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen. **(You must put it to a folder, the application won't read the temp folder)**
+1. Open your `.sav` file and drag and drop the `gamestate` to a folder then drag that file to the screen or open it using the file explorer. **(You must put it to a folder, the application won't read the temp folder)**
    
-2. Either way, the application will freeze as it tries to read the contents. ~Check the logs for their status.~
+3. Either way, the application will freeze as it tries to read the contents. ~Check the logs for their status.~
 
 Camera Controls
 ------------------------
 * Movement: Keyboard arrows or `W` `A` `S` `D`
+* Drag camera: `Right-click`
 * Dash: Hold `Shift` to dash
 * Zoom: Hold `Q` to zoom-out and `E` to zoom-in (NEW: `Mouse wheel` now works too)
 * Reset: Press `R` to reset position and zoom
 * Name: Hold `Tab` to temporarily show or hide star names
 * Cancel: Press `Esc` to cancel editor
+* Scale UI: `Ctrl [+ -]`
 
 Buttons
 ------------------------
@@ -96,12 +99,13 @@ There are three groups of button: `Visibility` `Edit` `Map` Hover to each icon t
   * `Arrow`: Click the white cardinal arrows.
   * `Drag`: Click the star first then drag them anywhere. Negative values makes the drag smoother.     Range: 2 to (-3)
 * **Hyperlane Editor**: click a star and another star to either connect or disconnect, automatically decides based on whether there is already a connection. Click on the star itself if you want to cancel.
-  * `Isolate`: Click on any star to remove all of its hyperlane `NEW`
+  * `Isolate`: Click on any star to remove all of its hyperlane
+* **Nebula Editor**: click a star or use the UI to add/remove them, you can also resize and move the nebula where you please. `NEW`
 * **Miscellaneous**
-  * `Search`: Can use ID or Star's name to possibly find what you look for, if an input exist, it will go to the first star found. `NEW` 
+  * `Search`: Can use ID or Star's name to possibly find what you look for, if an input exist, it will go to the first star found.
   * `Flip`: Map is inverted by default, so negative x is on the right side as to imitate Stellaris map. Toggleable
   * `Resume`: Resumes previous session, the original gamestate. Does not resume any previous changes, if you want to update it, just drag the saved gamestate.
-  * `Sandbox`: Turns the map into spiral
+  * ~~`Sandbox`: Turns the map into spiral~~ `DISABLED`
   
 Saving
 ------------------------
@@ -169,6 +173,25 @@ Third-party software:
 
 Changelog
 ========================
+**2.0-release: Nebula + Reworked UI**
+------------------------
+Woah, quite a jump in the version number there!
+
+* Added nebulas to the map so now you can see which are included and how large it is
+* Nebula Editor, including/excluding stars, change size and position of nebula
+* Reworked the UI to pretty much look similar to baseline Stellaris
+* Reworkd the appearance of star classes, now includes binary and trinary classes!
+* File explorer added in the starting menu as an alternate to dragging the file.
+* Search has now categories of star classes
+* Improved searching algorithm, now includes stars with similarity
+* Fixed numbers completely being rounded.
+* Added [Controls] tab
+* Added a guide to which star you are hovering
+* Added sliders to some editors
+* `Drag` - Right mouse button
+* `Scale UI` - Ctrl [+ -] 
+* Disabled Sandbox for now due to UI changes, you can use the previous version for it.
+
 **1.6-release: Fixed for 3.10x**
 ------------------------
 It now works with 3.10x games, I might add new features like wormhole editing but I'm still too busy right now.
