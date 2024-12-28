@@ -117,7 +117,7 @@ To save the changes you have made: Simply click `Map`->`Save`. The application w
 
   * `gamestate`: It is relatively safe now since I used a different way of saving it.
 
-**NOTE: This is before 3.3, `galactic_object={` is now `galactic_object=` new line `{`**
+   **NOTE: This is before 3.3, `galactic_object={` is now `galactic_object=` new line `{` so searching is now `galactic_object=\n`**
  
   * `galactic-object`: A more safer method. Copy everything inside this file using Notepad++ then open your original gamestate (make a copy) and search for `galactic_object={`, highlight the `{` only and press `Ctrl+Alt+B` then `Ctrl+V` to paste what you copied before. Save and make sure "galactic_object={" is not duplicated and starbase_mgr={ is intacted. 
 
@@ -127,13 +127,16 @@ Troubleshooting
 ------------------------
 **All the stars are gone! Why? Did the Prethoryn or Unbidden came?**
 
-From my experience, there's two possible reasons for that
+From my experience, there's three possible reasons for that
 
-**NOTE: This is before 3.3, `galactic_object={` is now `galactic_object=` new line `{`**
-
-* The `galactic_object={` is duplicated in which case it becomes `galactic_object=galactic_object={`, delete that duplicate. This usually happens when the contents of `galactic-object` is not copied properly, only highlight `{` and press `Ctrl+Alt+B` and copy.
 * You created/archive a new .sav file, it is not recommended as it would require following these [compression configurations](https://stellaris.paradoxwikis.com/Save-game_editing#Compression_on_Windows). You should only copy your .sav file, open it in 7zip and drag your modified gamestate there so it is overwritten.
   
+* There's an error on how the *gamestate* was formatted, there was an issue with the double brackets `}}` instead of `} new line }`, as of the current version of this editor, it is now fixed but there might be mishaps similar to this, please create an issue.
+
+   **NOTE: This is before 3.3, `galactic_object={` is now `galactic_object=` new line `{`**
+* The `galactic_object={` is duplicated in which case it becomes `galactic_object=galactic_object={`, delete that duplicate. This usually happens when the contents of `galactic-object` is not copied properly, only highlight `{` and press `Ctrl+Alt+B` and copy.
+
+
 **I can't click anything on the editor**
 * Sometimes the entities are not deleted or replaced properly, just close the application.
 
@@ -173,6 +176,16 @@ Third-party software:
 
 Changelog
 ========================
+
+**2.0-Optimized**
+------------------------
+Notice: Not tested in-game since I've stopped playing for months, make an issue if there's another bug, the editor can read the modified save file so at the very least it should work.
+* Fix another empty galaxy issue due to double bracketing bug
+* Reduce memory consumption when saving -> less chances of empty gamestate. Who would have thought changing one method by chance would reduce the lag greatly.
+* Added notice of the freezing when saving starts.
+
+**Anyway, I still have no plans of working with this editor again, I don't have an incentive rn.**
+
 **2.0-release: Nebula + Reworked UI**
 ------------------------
 Woah, quite a jump in the version number there!
