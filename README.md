@@ -177,16 +177,19 @@ Third-party software:
 Changelog
 ========================
 
-**2.0-Optimized**
+**1.8: Optimized and Bridge**
 ------------------------
 Notice: Not tested in-game since I've stopped playing for months, make an issue if there's another bug, the editor can read the modified save file so at the very least it should work.
+
+* PROPER VERSIONING
+* Added an option to make hyperlanes bridged or not
 * Fix another empty galaxy issue due to double bracketing bug
 * Reduce memory consumption when saving -> less chances of empty gamestate. Who would have thought changing one method by chance would reduce the lag greatly.
 * Added notice of the freezing when saving starts.
 
 **Anyway, I still have no plans of working with this editor again, I don't have an incentive rn.**
 
-**2.0-release: Nebula + Reworked UI**
+**1.6: Nebula + Reworked UI**
 ------------------------
 Woah, quite a jump in the version number there!
 
@@ -211,7 +214,7 @@ Woah, quite a jump in the version number there!
   
 
 
-**1.6-release: Fixed for 3.10x**
+**1.4.0: Fixed for 3.10x**
 ------------------------
 It now works with 3.10x games, I might add new features like wormhole editing but I'm still too busy right now.
 
@@ -220,7 +223,7 @@ It now works with 3.10x games, I might add new features like wormhole editing bu
 * Tweaked Search feature
 * Changed JSON to a format that isn't one-lined (didn't know it was possible)
   
-**1.5-release: Sandbox**
+**1.2.0: Sandbox**
 ------------------------
 This might be my last big update for this editor, I'm too busy irl.
 
@@ -232,7 +235,7 @@ This might be my last big update for this editor, I'm too busy irl.
 * Removed Lua dependency and converted to purely GDScript
 * Removed gdunzip
 
-**1.1.0-stable: UI + Video Tutorial**
+**1.1.0: UI + Video Tutorial**
 ------------------------
 I have been to busy with uni these days so I can't do any big changes with the editor
 
@@ -241,7 +244,7 @@ I have been to busy with uni these days so I can't do any big changes with the e
 * Made a video tutorial
 * Updated README.md 
 
-**1.0.0-stable: Hiatus: Search and Isolate Star functions added**
+**1.0.0: Search and Isolate Star functions added**
 ------------------------
 My Uni officially starts this week so I won't be touching this project unless it's bug fixes.
 
@@ -256,21 +259,16 @@ My Uni officially starts this week so I won't be touching this project unless it
 * Fixed Hyperlane being on top of Star
 * Updated README.md 
 
-**1.0.0 beta-3: .sav file now draggable, output directory opens**
+**0.9.0: .sav file now draggable, output directory opens**
 ------------------------
 Minor additions for convenience.
 
 * [.sav] files or the save-file itself can now be dragged to the screen!
 * The output directory will now open after saving is finished.
-
-**1.0.0 beta-2: Minor fixes**
-------------------------
-Justtt a bit more dopamine.
-
 * Fixed [Resume], now works properly
 * Fixed clearing previous maps, made a better alternative.
 
-**1.0.0 beta: It can now save!** Repository now public.
+**0.8.0: It can now save!** Repository now public.
 ------------------------
 Now I take a break.
 
@@ -286,7 +284,7 @@ _Fear the Blorg Aeternum!_
 <img src="https://user-images.githubusercontent.com/107048186/183735974-93249845-a2a7-458e-95a5-b47e26544c30.png" width="631" height="384">
 
 
-**0.9.2: Drag-drop savefile, read, parse, generate visual.**
+**0.7.0: Drag-drop savefile, read, parse, generate visual.**
 ------------------------
 * Added [https://github.com/gilzoide/godot-lua-pluginscript](https://github.com/gilzoide/godot-lua-pluginscript), rewrote my lua scripts from scratch
 * Parses the contents of the star section of the save game using Lua since their string functions are crucial for pattern-matching.
@@ -300,31 +298,31 @@ _Merged too many savefiles in one, the parallel universes are merging!_
 
 <img src="https://user-images.githubusercontent.com/107048186/183307433-4008290b-4071-4eee-98f9-dba6cb04abb9.png" width="420" height="355">
 
-**0.9: Edit Stars by dragging and clicking and optimized all code**
+**0.6.0: Edit Stars by dragging and clicking and optimized all code**
 ------------------------
 For a month now, I have coded all the basic features needed to edit star position and the hyperlanes from scratch. The only thing I'm lacking of is translating the Lua code I made for parsing and packing, which might be another headache. Therefore, I will take a break from this after I complete my summer classes cause this is turning into my addiction.
 * Optimized all code, by optimized, I compressed lines into a "for (key) in (array)" hell.
 * Added ability to edit stars by dragging and clicking arrows
 
-**0.8: Star Editor**
+**0.5.0: Star Editor**
 ------------------------
 It can now edit Star Position through input, It's already 4AM in my country and I'm still doing this thing while I still have freaking projects for the summer, I need help in addiction. I have basically finished all things I need to do for coding except for translating the Lua I coded  into this language. They complete the puzzle but they don't fit yet.
 * Added ability to edit stars through coordinate input
 * Added better UI button texture, from scratch
 
-**0.7: Hyperlane Editor**
+**0.4.0: Hyperlane Editor**
  ------------------------
 * Added buttons to toggle visiblity for names, stars and hyperlane
 * Added the ability to add and remove hyperlanes
  
-**0.6: GODOT:**
+**0.3.0: GODOT:**
  ------------------------
  After trying countless studios, I find it more comfortable to use Godot-Engine since I don't have to deal with problems that will take my focus out of the things I need to do especially with my measly coding skill.
 * Created a basic star and hyperlane generator
 * Created textures for the map,buttons and stars 
 * Moved to a different Github repository
 
-**0.1-0.5: Replit, Encoding and Decoding**
+**0.2.0: Replit, Encoding and Decoding**
  ------------------------
 `##Old README##`
 I HAVE SUMMER CLASS AND I SPENT A WHOLE WEEK PROCRASTINATING BY CODING THIS THING WHOLE WEEK
@@ -342,7 +340,6 @@ _Results of mass editing: changing the coordinates work but changing the hyperla
 
 * I'll stop this for now, spent a week doing this, still have summer classes so, will take a break in a month
 
-
-Alpha version: Roblox Studio
+**0.1.0: Roblox Studio**
 ------------------------
 My only intention was to visualize my map so I can edit them, now look what happend, I made this for a whole month and more and ~~more!~~...
