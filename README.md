@@ -5,7 +5,7 @@
 You can support me on Ko-Fi, this is also where I release any current updates.
 
 
-**For anyone using v1.5 before, delete the files in `%APPDATA%/Nro-Galaxy-Editor/`**
+**For anyone using v1.4.0 before, delete the files in `%APPDATA%/Nro-Galaxy-Editor/`**
 
 # Nro's Galaxy Editor for Stellaris
 As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
