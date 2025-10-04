@@ -41,9 +41,9 @@ Features
 
 Video Tutorial
 ========================
-WIP ON THE VIDEO
+https://www.youtube.com/watch?v=V70jAdt0An0
 
-[![Watch the video](https://img.youtube.com/vi/pAMM_ObnhUs/maxresdefault.jpg)]()
+[![Watch the video](https://img.youtube.com/vi/V70jAdt0An0/maxresdefault.jpg)](https://www.youtube.com/watch?v=V70jAdt0An0)
 
 Instructions and Usage
 ========================
