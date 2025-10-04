@@ -41,11 +41,9 @@ Features
 
 Video Tutorial
 ========================
-!WILL MAKE A NEW VIDEO FOR THE NEW VERSION
+WIP ON THE VIDEO
 
-https://www.youtube.com/watch?v=pAMM_ObnhUs
-
-[![Watch the video](https://img.youtube.com/vi/pAMM_ObnhUs/maxresdefault.jpg)](https://youtu.be/pAMM_ObnhUs)
+[![Watch the video](https://img.youtube.com/vi/pAMM_ObnhUs/maxresdefault.jpg)]()
 
 Instructions and Usage
 ========================
