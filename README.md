@@ -1,19 +1,17 @@
-<img src="https://user-images.githubusercontent.com/107048186/212237920-09d01e3c-0f46-4759-b3ae-d39c05d73383.png" width="250" height="250">
+<img align="left" width="90" height="90" src="https://github.com/user-attachments/assets/be8d4283-d126-431e-a4c6-a8c6a28e218c">
+ 
+<br>
+
+# Nro001 Galaxy Charter
+
+_As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button._
+
+This small project was made to generate visual map to edit the position of stars, dis/connect hyperlanes and group nebulas. I completely remade it three years after. This is also my first finished project so if there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
+I made every pixel art and code for this project!
+
+**For anyone using older versions, delete the files in `%APPDATA%/Nro-Galaxy-Editor/`**
 
 [<img alt="Donate" width="250px" src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/4edb1609-e3d4-437e-8b43-43d34f293b16" />](https://ko-fi.com/O4O2UEDP5)
-
-You can support me on Ko-Fi, this is also where I release any current updates.
-
-
-**For anyone using v1.4.0 before, delete the files in `%APPDATA%/Nro-Galaxy-Editor/`**
-
-# Nro's Galaxy Editor for Stellaris
-As a Type-5 Kardashev being, you are able to move the stars of a mere galaxy and manipulate their waypoints as you please with just a divine click of a button.
-
-This is just a small project that generates visual map to edit the position of stars and connects/disconnects hyperlanes. This is also my first project that I actually finished so if there are any issues, post them [here](https://github.com/neroiii/Stellaris_Galaxy_Editor/issues).
-
-Note: I will be taking a break **now** as I have completed the main objectives. I just did this as a hobby ~~addiction~~ really and I'm in university so I need to focus with my studies. I just did this for fun during my summer break, by **"fun"**, I mean taking a month, usually full-time each session, of creating textures, coding and tweaking.
-
 
 [`Features`](#features) [`Support`](#support) [`Software`](#software) [`Changelog`](#changelog) [`Instructions`](#instructions-and-usage) [`Troubleshooting`](#troubleshooting)
 ------------------------
