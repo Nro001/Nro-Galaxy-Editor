@@ -35,7 +35,6 @@ Features
 - [x] **Miscellaneous**
 - - [x] Search function 
 - - [x] Toggle visibility for Stars, Names, Hyperlane
-- - [ ] Mass editing `non-priority` Try to [manually edit them](https://github.com/neroiii/Stellaris_Galaxy_Editor#a-manual-way-to-edit) for now.
 
 Video Tutorial
 ========================
@@ -60,5 +59,4 @@ This project uses [Godot Engine](https://github.com/godotengine/godot) to create
 
 Changelog
 ========================
-
 The changelog is moved to the wiki as it is too long [Changelog](https://github.com/Nro001/Nro-Galaxy-Editor/wiki/Changelog)
