@@ -13,9 +13,12 @@ I made every pixel art and code for this project!
 
 [<img alt="Donate" width="250px" src="https://github.com/Nro001/Nro-Galaxy-Editor/assets/107048186/4edb1609-e3d4-437e-8b43-43d34f293b16" />](https://ko-fi.com/O4O2UEDP5)
 
+
 [`Features`](#features) [`Software`](#software) [`Changelog`](#changelog) [`Instructions`](#instructions-and-usage) [`Troubleshooting`](https://github.com/Nro001/Nro-Galaxy-Editor/wiki/Troubleshooting)
 ------------------------
 <img width="1278" height="799" alt="Screenshot_6" src="https://github.com/user-attachments/assets/a98c90a1-94d7-4379-a6f0-16d16b337577" />
+
+<img width="1278" alt="image" src="https://github.com/user-attachments/assets/ccebd605-a3d1-47ad-80aa-5c04ab3f457f" />
 
 Features
 ========================
