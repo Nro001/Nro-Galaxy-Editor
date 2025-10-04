@@ -62,4 +62,45 @@ This project uses [Godot Engine](https://github.com/godotengine/godot) to create
 
 Changelog
 ========================
-The changelog is moved to the wiki as it is too long [Changelog](https://github.com/Nro001/Nro-Galaxy-Editor/wiki/Changelog)
+The rest of the changelog is moved to the wiki as it is too long [Changelog](https://github.com/Nro001/Nro-Galaxy-Editor/wiki/Changelog)
+
+**2.0: A Complete Remake**
+------------------------
+
+This is a complete remake from the ground-up from code to art, the previous changelogs only reflects the previous version.
+I also made a wiki for all the information [Wiki](https://github.com/Nro001/Nro-Galaxy-Editor/wiki/Controls)
+
+**Saving and Loading**: You can now save and load your save-file without extracting `gamestate`
+* Added a save-as function 
+* Fixed most lag and freezing issues
+
+**Editor**
+* Undo and Redo function
+* Configuration for various options
+* Loading/Progress bar for saving and loading
+* Grid Mode `G`
+* Shortcuts to search, new, save, grid mode
+* Scalable and Minimizable editors
+
+**Star Editing**
+* Can click at the X and Y bars to type
+* Can now click on the individual buttons of each digit to increase or decrease them
+* Can modify drag threshold using config panel
+* Can modify pickable range using config panel (might overlap)
+* Can be scaleable both name and star
+* Toggable simplified version (Grid Mode)
+
+**Hyperlane Editing**
+* Can now change the behaviour after pairing stars
+* Can toggle attaching and detaching
+* Can change color and width of the lanes appearance in the editor
+
+**Nebula Editing**
+* Can click stars to add/remove them
+* Can edit properties of a nebula
+* Toggable simplified nebula (Grid Mode)
+
+**Search**
+* Can ping the star
+* Can teleport to the selected star
+* Can click the star through the search
